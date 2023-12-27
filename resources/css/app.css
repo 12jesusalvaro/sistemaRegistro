@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#progress-bar-container {
+    width: 85%; /* Ancho del contenedor de la barra de progreso */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor */
+}
+
+#progress-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#progress-bar li {
+    float: left;
+    width: 14.2857142857%; /* Divide el ancho en 7 partes iguales para 6 elementos de lista */
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+#progress-bar li.active {
+    border-bottom-color: #ff0000; /* Color de la barra de progreso activa */
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+li.active {
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos para pantallas medianas y más pequeñas */
+@media only screen and (max-width: 768px) {
+    .left-div {
+        width: 100%; /* Ancho del div izquierdo en porcentaje para ocupar toda la pantalla */
+    }
+
+    .right-div {
+        display: none; /* Ocultar el div derecho */
+    }
+}
